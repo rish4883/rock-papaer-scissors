@@ -9,3 +9,21 @@ function getComputerChoice() {
     }
     return computerChoice;
 }
+
+function playRound(playerChoice, computerChoice) {
+    playerChoice = playerChoice.toLowerCase();
+    let winner;
+
+    if(!(playerChoice == "rock" || playerChoice == "paper" || playerChoice == "scissor"))
+        return;
+    else if(computerChoice == playerChoice) 
+        winner = "tie";
+        // result = "It's a Tie!";
+    else if((computerChoice == "rock" && playerChoice == "paper") || (computerChoice == "scissor" && playerChoice == "rock") || (computerChoice == "paper" && playerChoice == "scissor") )
+        winner = "player";
+        // result = "You win! " + playerChoice + " beats " + computerChoice;
+    else
+        winner = "computer";
+        // result = "You lose! " + computerChoice + " beats " + playerChoice;
+    return winner;
+}
