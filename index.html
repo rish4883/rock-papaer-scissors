@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="rps.js" defer></script>
         <title>Rock Paper Scissors</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <script src="rps.js"> </script>
+        <div class="header">
+            <h1>ROCK PAPER SCISSORS</h1>
+        </div>
+        <div class="content">
+            
+            <div class="buttons">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissor">Scissor</button>
+            </div>
+            <div class="choices">
+               <div>Your choice
+                <p>-</p>
+               </div> 
+               <div>Computer's choice
+                <p>-</p>
+               </div>
+            </div>
+            <div class="round"></div>
+            <div class="score">
+                <div>Player Score:</div>
+                <div>Computer Score:</div>
+            </div>
+            <div class="result">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </body>
 </html>
